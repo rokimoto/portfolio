@@ -4,7 +4,7 @@ import Ag from '@/app/styles/typography';
 const S = {
   Project: styled.div``,
   Link: styled.a`
-    display: block;
+    display: table-cell;
     margin-bottom: ${({ theme }) => theme.spacing.XS};
   `,
   Title: styled.h3`
