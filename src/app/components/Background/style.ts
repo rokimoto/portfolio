@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const colorBg1 = 'rgb(255,235,246)';
+const colorBg1 = 'rgb(246,253,245)';
 const colorBg2 = 'rgb(240,250,253)';
 const color1 = '208, 195, 241';
 const color2 = '233, 249, 229';
