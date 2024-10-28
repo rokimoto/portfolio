@@ -37,7 +37,7 @@ export default function Home() {
           />
           <Project
             position="Senior frontend engineer"
-            company="Bright Live"
+            company="Bright"
             link="https://brightlive.com"
             skills={[
               'Next.js',
