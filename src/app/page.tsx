@@ -1,95 +1,100 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+// Components
+import Background from './components/Background';
+import Project from './components/Project';
+// Icons
+import LinkedIn from './icons/LinkedIn';
+import Github from './icons/Github';
+import Email from './icons/Email';
+// Styles
+import S from './styles/page.style';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+    <S.Page>
+      <Background />
+      <S.Header>Hello</S.Header>
+      <S.Bio>
+        My name is Rachel Okimoto. I am a senior frontend engineer with 9+ years
+        experience. I specialize in building design systems and pixel-perfect,
+        engaging experiences.
+      </S.Bio>
+      <S.Section>
+        <S.SectionTitle>Experience</S.SectionTitle>
+        <S.Projects>
+          <Project
+            position="Senior frontend engineer / UX"
+            company="Twisty.ai"
+            link="https://twisty.ai"
+            skills={[
+              'Next.js',
+              'React',
+              'TypeScript',
+              'JavaScript',
+              'Storybook',
+              'Figma',
+            ]}
+          />
+          <Project
+            position="Senior frontend engineer"
+            company="Bright Live"
+            link="https://brightlive.com"
+            skills={[
+              'Next.js',
+              'React',
+              'TypeScript',
+              'JavaScript',
+              'Storybook',
+              'Figma',
+            ]}
+          />
+        </S.Projects>
+      </S.Section>
+      <S.Section>
+        <S.SectionTitle>Projects</S.SectionTitle>
+        <S.Projects>
+          <Project
+            company="Door"
+            link="https://door-nyc.com"
+            skills={['JavaScript', 'CSS', 'Shopify']}
+          />
+          <Project
+            company="Jae Jung Portfolio"
+            link="https://jae-portfolio-sample.vercel.app"
+            skills={['Next.js', 'React', 'TypeScript']}
+          />
+          <Project
+            company="A Slice of Machine Learning"
+            link="https://sliceofml.withgoogle.com"
+            skills={['Angular', 'SCSS']}
+          />
+          <Project
+            company="Behr Color Discovery"
+            link="https://colordiscovery.behr.com/welcome"
+            skills={['React', 'CSS']}
+          />
+        </S.Projects>
+      </S.Section>
+      <S.Section>
+        <S.SectionTitle>Socials</S.SectionTitle>
+        <S.Socials>
+          <S.Social
+            href="https://www.linkedin.com/in/rachelokimoto/"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            <LinkedIn size={32} />
+          </S.Social>
+          <S.Social href="https://github.com/rokimoto" target="_blank">
+            <Github size={32} />
+          </S.Social>
+          <S.Social
+            href="ma&#105;&#108;to&#58;&#37;7&#50;a&#99;&#104;%65l&#46;%&#54;F&#107;imot&#111;&#64;%6&#55;%6&#68;&#37;61&#105;%6C&#46;com"
             target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            <Email size={32} />
+          </S.Social>
+        </S.Socials>
+      </S.Section>
+    </S.Page>
   );
 }
