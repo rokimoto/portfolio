@@ -24,7 +24,7 @@ export default function Home() {
         <S.Projects>
           <Project
             position="Senior frontend engineer / UX"
-            company="Twisty.ai"
+            company="Twisty"
             link="https://twisty.ai"
             skills={[
               'Next.js',

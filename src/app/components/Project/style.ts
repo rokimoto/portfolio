@@ -4,18 +4,20 @@ import Ag from '@/app/styles/typography';
 const S = {
   Project: styled.div``,
   Link: styled.a`
-    display: table-cell;
+    display: block;
     margin-bottom: ${({ theme }) => theme.spacing.XS};
   `,
-  Title: styled.h3`
+  Title: styled.div`
     ${Ag.HeadingSM}
-    margin-right: ${({ theme }) => theme.spacing['2XS']};
-    display: inline;
-    vertical-align: middle;
+  `,
+  Company: styled.div`
+    display: inline-block;
   `,
   Icon: styled.div`
-    display: inline;
-    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-left: ${({ theme }) => theme.spacing['2XS']};
   `,
   Tags: styled.div`
     display: flex;

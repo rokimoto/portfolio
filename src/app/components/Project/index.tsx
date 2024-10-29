@@ -18,11 +18,13 @@ const Project = ({ position, company, link, skills }: ProjectProps) => {
       <S.Link href={link} target="_blank">
         <S.Title>
           {position && `${position} - `}
-          {company}
+          <S.Company>
+            {company}
+            <S.Icon>
+              <OpenInNew />
+            </S.Icon>
+          </S.Company>
         </S.Title>
-        <S.Icon>
-          <OpenInNew />
-        </S.Icon>
       </S.Link>
       <S.Tags>
         {skills.map((skill: string, i: number) => {

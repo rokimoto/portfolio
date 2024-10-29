@@ -30,7 +30,6 @@ yarn run build
 yarn run lint
 ```
 
-
 5. To format with prettier
 
 ```js
