@@ -2,11 +2,11 @@ import styled, { keyframes } from 'styled-components';
 
 const colorBg1 = 'rgb(246,253,245)';
 const colorBg2 = 'rgb(240,250,253)';
-const color1 = '208, 195, 241';
-const color2 = '233, 249, 229';
-const color3 = '206, 238, 248';
-const color4 = '255, 215, 238';
-const color5 = '254, 241, 171';
+const color1 = '208, 195, 241'; // purple
+const color2 = '233, 249, 229'; // green
+const color3 = '206, 238, 248'; // blue
+const color4 = '252, 227, 242'; // pink
+const color5 = '254, 241, 171'; // yellow
 const colorInteractive = '255, 164, 216';
 const circleSize = '80%';
 const blending = 'hard-light';
