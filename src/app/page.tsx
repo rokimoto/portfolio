@@ -60,7 +60,7 @@ export default function Home() {
           />
           <Project
             company="Jae Jung Portfolio"
-            link="https://jae-portfolio-sample.vercel.app"
+            link="https://www.jae.world"
             skills={['Next.js', 'React', 'TypeScript']}
           />
           <Project
